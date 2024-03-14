@@ -75,18 +75,18 @@ if __name__ == "__main__":
 
 
         # For remote server only (Dagshub)
-        remote_server_uri = "https://dagshub.com/entbappy/MLflow-Expriement-demo.mlflow"
-        mlflow.set_tracking_uri(remote_server_uri)
+        #remote_server_uri = "https://dagshub.com/entbappy/MLflow-Expriement-demo.mlflow"
+        #mlflow.set_tracking_uri(remote_server_uri)
 
-        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-
+        #tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        mlflow.sklearn.log_model(lr, "model")
         # Model registry does not work with file store
-        if tracking_url_type_store != "file":
+        #if tracking_url_type_store != "file":
             # Register the model
             # There are other ways to use the Model Registry, which depends on the use case,
             # please refer to the doc for more information:
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-            mlflow.sklearn.log_model(
-                lr, "model", registered_model_name="ElasticnetWineModel")
-        else:
-            mlflow.sklearn.log_model(lr, "model")
+            #mlflow.sklearn.log_model(
+                #lr, "model", registered_model_name="ElasticnetWineModel")
+        #else:
+            #mlflow.sklearn.log_model(lr, "model")
