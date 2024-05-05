@@ -1,0 +1,10 @@
+artifacts_root: artifacts
+
+# Create artifacts/data_ingestion folder and from source URL download the zip file  to artifacts/data_ingestion folder as data.zip 
+#cunzip  teh data.zip to /data_ingestion folder
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL:  https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
