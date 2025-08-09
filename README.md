@@ -92,7 +92,7 @@ python mlflow_demo.py 0.7 0.8
 3. dvc dag
 
 ### DVC cmd
-```
+``` python
 def create_padding_mask(batch, padding_token_id):
     batch_size, seq_len = batch.shape
     device = batch.device
