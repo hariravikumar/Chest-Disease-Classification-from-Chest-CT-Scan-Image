@@ -51,7 +51,6 @@ Log in with Github
 
 ```bash
 
-
 MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow \
 MLFLOW_TRACKING_USERNAME=harik76 \
 MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7 \
@@ -94,5 +93,8 @@ run this command for MLflow test for wine quality  with different parameter
 ```bash
 python mlflow_demo.py 0.7 0.8
 ```
+### DVC cmd
 
-Read  the  data from google drive
+1. dvc init
+2. dvc repro
+3. dvc dag
