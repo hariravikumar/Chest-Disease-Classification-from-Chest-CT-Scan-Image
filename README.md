@@ -13,7 +13,6 @@ git push origin main
 
 ## Create  virtual env
 ```bash
-
 conda create -n chest python=3.8 -y
 ```
 ## Activate virtual env
@@ -50,12 +49,10 @@ Log in with Github
 ## Mlflow dagshub connection uri
 
 ```bash
-
 MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow \
 MLFLOW_TRACKING_USERNAME=harik76 \
 MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7 \
 python script.py
-
 
 MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow\
 MLFLOW_TRACKING_USERNAME=harik76 \
@@ -74,18 +71,13 @@ MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow \
 MLFLOW_TRACKING_USERNAME=harik76 \
 MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7 \
 python script.py
-
 ```
 
 ## RUN from bash terminal
 ```bash
-
 export MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow
-
 export MLFLOW_TRACKING_USERNAME=harik76 
-
 export MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7
-
 ```
 
 # Demo for MLflow
@@ -99,6 +91,7 @@ python mlflow_demo.py 0.7 0.8
 2. dvc repro
 3. dvc dag
 
+### DVC cmd
 ```
 def create_padding_mask(batch, padding_token_id):
     batch_size, seq_len = batch.shape
