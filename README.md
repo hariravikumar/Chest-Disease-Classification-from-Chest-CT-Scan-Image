@@ -91,12 +91,4 @@ python mlflow_demo.py 0.7 0.8
 2. dvc repro
 3. dvc dag
 
-### DVC cmd
-``` python
-def create_padding_mask(batch, padding_token_id):
-    batch_size, seq_len = batch.shape
-    device = batch.device
-    padded = torch.zeros_like(batch, device=device).float().masked_fill(batch == padding_token_id, float('-inf'))
-    mask = torch.zeros(batch_size, seq_len, seq_len, device=device) + padded[:,:,None] + padded[:,None,:]
-    return mask[:, None, :, :]
-```
+
