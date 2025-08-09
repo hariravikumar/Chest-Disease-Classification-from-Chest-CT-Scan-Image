@@ -12,7 +12,7 @@ git push origin main
 
 
 
-## How to crate virtial environmnt?
+## How to crate virtial environment?
 
 ```bash
 conda create -n chest python=3.8 -y
