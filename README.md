@@ -9,24 +9,22 @@ git add .
 git commit -m "Updated"
 
 git push origin main
-
-
-
-## How to crate virtial environment?
-
-```bash
-conda create -n chest python=3.8 -y
-
-
-```bash
-conda activate chest
-
 ```
 
+## Create  virtual env
+```bash
+
+conda create -n chest python=3.8 -y
+```
+## Activate virtual env
+```bash
+conda activate chest
+```
+##  Install libraries frim requirement file
 ```bash
 pip install -r requirements.txt
 ```
-
+##  Run python file
 ```bash
 python app.py
 ```
