@@ -71,7 +71,6 @@ python script.py
 
 ## MLflow dagshub connectrion uri
 ```bash
-
 MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow \
 MLFLOW_TRACKING_USERNAME=harik76 \
 MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7 \
@@ -82,12 +81,6 @@ python script.py
 ## RUN from bash terminal
 ```bash
 
-
-
-
-
-
-
 export MLFLOW_TRACKING_URI=https://dagshub.com/harik76/MLflow-Experiment-demo.mlflow
 
 export MLFLOW_TRACKING_USERNAME=harik76 
@@ -95,8 +88,6 @@ export MLFLOW_TRACKING_USERNAME=harik76
 export MLFLOW_TRACKING_PASSWORD=6a5aadabe5c9c54d7ee9f8d09b1d529194e2d9a7
 
 ```
-
-
 
 # Demo for MLflow
 run this command for MLflow test for wine quality  with different parameter
